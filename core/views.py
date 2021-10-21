@@ -1,0 +1,4 @@
+from django.shortcuts import render, HttpResponse
+# Create your views here.
+def hello(requeast, nome, idade):
+    return HttpResponse('<h1>hello {} de {} anos</h1>'.format(nome, idade))
